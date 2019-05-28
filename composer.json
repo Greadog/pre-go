@@ -1,0 +1,23 @@
+{
+    "name": "greadog/pre-go",
+    "authors": [
+        {
+            "name": "hooklife",
+            "email": "miaogaopeng123@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Greadog\\PreGo\\": "source"
+        }
+    },
+    "require": {
+        "pre/plugin": "^0.11.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0|^6.0"
+    },
+    "extra": {
+        "macros": ["source/macros.yay"]
+    } 
+}

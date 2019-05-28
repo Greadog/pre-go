@@ -1,0 +1,16 @@
+<?php
+$(macro :recursion) {
+    $(chain(
+        go,
+        between(
+            token("{"), layer() as body, token("}")
+        ),
+        optional(token(";"))
+    ))
+} >> {
+    $$(collapse($$(trim(
+        go(function ()){
+            $$(trim($(body)))
+        }
+    ))))
+}
